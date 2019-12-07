@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.result {
+  position: relative;
+  line-height: 1.8;
+  overflow-x: scroll;
+  box-shadow: 0 4px 2px -2px;
+  background-color: rgba(19, 19, 19, .64);
+  height: 100px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  background-color: black;
+  height: 15%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb {
+  background-color: #d63c6b;
 }
 
-.App-link {
-  color: #61dafb;
+.result p {
+  color: #d63c6b;
+  font-size: 40px;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator-body {
+  max-width: 400px;
+  margin: auto;
+  padding: 10%;
+}
+
+.button {
+  background-color: #292f36;
+  display: block;
+}
+
+button {
+  background-color: #292f36;
+  width: 25%;
+  height: 80px;
+  font-size: 30px;
+}
+
+button[name="."],[name="0"],[name="1"],[name="2"],[name="3"],[name="4"],[name="5"],[name="6"],[name="7"],[name="8"],[name="9"] {
+  color: #5cc8ff;
+}
+
+button[name="("],[name="CE"],[name=")"],[name="C"],[name="+"],[name="-"],[name="*"],[name="/"],[name="="] {
+  color: #d63c6b;
+}
+
+.particles {
+z-index: -1;
 }
