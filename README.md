@@ -1,5 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1c4fd042-d16d-4844-988c-a01f908e017d/deploy-status)](https://app.netlify.com/sites/my-calculator-app/deploys)
 
+website: https://my-calculator-app.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
